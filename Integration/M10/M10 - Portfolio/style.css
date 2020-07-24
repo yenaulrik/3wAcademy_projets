@@ -1,0 +1,351 @@
+/*POLICES*/
+    /*texte: 18px*/
+    /*nav : 20px*/
+    /*logo et h1 : 40px*/
+    /*h2 : 35px*/
+    /*h3 des compétences : 30px*/
+    /*icone : 25px*/
+    /*input et textarea : 16px*/
+html{
+   font-size : 62.5%;
+     
+}
+
+body{
+    margin : 0 auto;
+    background-image : url('img/fond.png');
+    font-family: 'Bree Serif', serif;
+    font-size : 1.8rem;
+    color : #808080a6;
+    line-height : 1.8;
+    
+}
+h1{
+    color : white;
+    font-size : 3rem;
+}
+h2{
+    color : #ea1a62;
+    font-size : 2.5rem;
+}
+h3{
+    color : #ea1a62;
+}
+h3, .comp{
+    font-size : 2rem;
+}
+nav a{
+    font-size : 1.8rem;
+}
+i{
+    font-size : 1.5625rem;
+}
+#realisations a{
+    color : #ea1a62;
+    text-decoration : none;
+}
+
+section{
+    margin-bottom : 45px;
+}
+hr{
+    color : #8080805e;
+}
+    /*----------  HEADER  -------------*/
+
+header{
+    margin : 0 auto;
+    text-align : center;
+    padding : 0;
+    color : grey;
+}
+header img{
+    vertical-align : middle;
+    width : 80px;
+    transition : transform 300ms cubic-bezier(.48,-0.18,.51,1.21);
+}
+
+header img:hover{
+    transform : scale(1.5) rotate(180deg);
+}
+
+header p{
+    transition : transform 300ms cubic-bezier(.48,-0.18,.51,1.21);
+}
+
+header img:hover + p{
+    transform : translate(50px,0%);
+}
+
+header div{
+    display : inline-block;
+    width : 45%;
+    vertical-align : middle;
+}
+header p{
+    font-size : 4rem;
+    vertical-align : middle;
+    display : inline-block;
+}
+header ul{
+    margin : 0;
+    padding : 0 ;
+    text-align : left;
+}
+header li{
+    text-align : center;
+    display : inline-block;
+    width : 20%;
+    margin : 0px 40px 40px 0;
+}
+header li, header a{
+    text-decoration : none;
+    list-style-type : none;
+    color : grey;
+}
+header li a span{
+    display : block;
+}
+header i{
+    margin : 10px;
+    margin-top : 25px;
+    font-size : 3rem;
+}
+header i{
+    transition : all 300ms ease-in-out;
+}
+header span{
+    transition : all 300ms ease-in-out;
+}
+
+header a:hover > i{
+    transform : translate(0px, 50px) rotate(360deg) scale(1.2);
+}
+header a:hover > i + span{
+    transform : translate( 0px,  -50px);
+}
+    /*----------  PRESENT  -------------*/
+    
+#present{
+    background-image : url('img/bg_header.png');
+    background-repeat : no-repeat;
+    background-size : 100% 100%;
+    display : block;
+    
+    
+    margin : 0 auto;
+    text-align : center;
+    padding : 5%;
+    color : white;
+}
+#present h1{
+    margin-top : 130px;
+}
+#present a{
+    padding : 10px 40px 10px;
+    background-color : #ea1a62;
+    color : white;
+    border : 2px solid #c85252;
+    border-radius : 8px;
+}
+#present p{
+    margin : 45px;
+}
+
+    /*-----------    MAIN    --------------*/
+    
+main{
+    width : 75%;
+    margin : 0 auto;
+    text-align : center;
+}
+
+    /*----------  COMPETENCES  -------------*/
+#competences div{
+    display : inline-block;
+    width : 33%;
+    box-sizing : border-box;
+}
+#competences div span{
+    display : block;
+}
+
+#competences img{
+    transition : transform 1s ease-in-out;
+}
+#competences img:hover{
+    transform : rotate(360deg);
+}
+
+
+    /*----------  SERVICES  -------------*/
+#services div{
+    display : inline-block;
+    width : 33%;
+    box-sizing : border-box;
+    padding : 15px;
+}
+#services div span{
+    display : block;
+}    
+#services i{
+    padding : 30px;
+    border : 2px solid #8080805e;
+    border-radius : 50%;
+    background-color: #8080801a;
+    font-size : 3rem;
+}
+#services i{
+    transition : transform 1s ease-in-out;
+}
+#services i:hover{
+    transform : rotate(360deg);
+}
+    /*----------  REALISATIONS  -------------*/
+    
+main section article{
+    display : block;
+    text-align : left;
+    overflow : auto;
+}
+
+section article:nth-child(even) img{
+    width : 50%;
+    float : left;
+    clear : both;
+    margin-right : 15px;
+}
+section article:nth-child(odd) img{
+    width : 50%;
+    float : right;
+    clear : both;
+    margin-left : 15px;
+}
+
+#realisations a{
+    display : block;
+    text-align : left;
+    margin-left : 30px;
+}
+section article:nth-child(odd) img{
+    transition : all 500ms ease-in-out;
+}
+section article:nth-child(odd) img:hover{
+    transform : rotate(5deg) translate(30px, -50px);
+    box-shadow : 10px 10px 10px grey;
+    
+}
+section article:nth-child(even) img{
+    transition : all 500ms ease-in-out;
+}
+section article:nth-child(even) img:hover{
+    transform : rotate(-5deg) translate(-30px, -50px);
+    box-shadow : 10px 10px 10px grey;
+    
+}
+    /*----------  CONTACT  -------------*/
+
+#contact{
+     text-align : center;   
+}
+#contact p{
+    text-align : left;
+    
+}
+#contact form div{
+    position : relative;
+}
+#contact form img{
+    width : 37px;
+    position : absolute;
+    top : 11px;
+    left : 10px;
+    
+}
+#contact form{
+    text-align : left;
+    display : block;
+    position : relative;
+    box-sizing : border-box;
+}
+#contact{
+    position : relative;
+}
+
+#contact div:nth-child(1){
+    display : inline-block;
+    width : 40%;
+}
+#contact div:nth-child(2){
+    display : inline-block;
+    position :absolute;
+    right : 6%;
+    width : 40%;
+}
+#contact div:nth-child(3){
+    display : block;
+}
+
+#contact input[type="text"],#contact input[type="mail"]{
+    
+    width : 90%;
+    border : 1px solid #808080a6;
+    border-radius : 30px;
+    padding : 15px;
+    padding-left : 65px;
+    margin-top : 5px;
+    margin-bottom : 5px;
+}
+#contact input[type="mail"]{
+   
+}
+#contact input[type="textarea"]{
+    width : 90%;
+    border : 1px solid #808080a6;
+    border-radius : 30px;
+    padding : 15px;
+    padding-left : 65px;
+    margin-top : 5px;
+    margin-bottom : 5px;
+}
+
+.center{
+    text-align : center;
+    
+}
+#contact input[type="submit"]{
+    color : white ;
+    padding : 10px 25px 10px;
+    background-color : #ea1a62;
+    border : none;
+    margin : 20px;
+}
+#contact input[type="reset"]{
+    color : white ;
+    padding : 10px 25px 10px;
+    background-color : #808080a6;
+    border : none;
+    margin : 20px;
+}
+    /*--------  FOOTER  ----------*/
+footer{
+    
+    padding-top : 20px;
+    display : block;
+    text-align : center;
+}
+footer p{
+    color : grey;
+    font-size : 0.8em;
+    font-family : Cardo;
+    text-align : center;
+}
+footer a{
+    color : #ea1a62;
+}
+footer img{
+    max-width : 50px;
+    max-height : 50px;
+    min-width : 40px;
+    min-height : 40px;
+}

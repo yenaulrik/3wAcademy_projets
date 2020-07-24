@@ -1,0 +1,156 @@
+/* FONTS */
+h1, h2, h3, nav{
+    font-family: 'Slabo 27px', serif;
+}
+
+body{
+    background-image : url("../img/fond.png");
+    font-size : 1em;
+    font-family: 'Open Sans', sans-serif;
+    color : #404b54;
+    margin : 0px;
+    line-height : 1.5;
+}
+header{
+    
+    
+    width : 100%;
+    background-color : #34b1b3;
+    border : 3px solid #28989b;
+    margin : 65px auto;
+    text-align : center;
+    padding-bottom : 15px;
+}
+header nav a{
+    color : white;
+    text-decoration : none;
+    padding : 20px;
+    font-size : 1.3em;
+}
+header nav a:hover{
+    background-color : #3dcfd1;
+    border-radius : 90px;
+    box-shadow : 5px 5px 10px #3cc5c7;
+    padding : 5px 20px 5px 20px ;
+}
+.container{
+    margin : 0 auto;
+    min-width : 800px;
+    max-width : 1100px;
+}
+#presentation{
+    text-align : center;
+    width : 70%;
+    display : block;
+    margin : 0 auto;
+}
+#presentation h1{
+    font-size : 2.5em;
+}
+main{
+    background-color : #b6dedd;
+    display : inline-block !important; 
+    width : 65%;
+    vertical-align : top;
+    box-sizing : border-box;
+    margin-right : 15px;
+     
+    padding : 30px;
+}
+main h2{
+    text-align : center;
+    font-size : 3.5em;
+    margin-top : 20px;
+    margin-bottom : 0px;
+}
+main article{
+    display : inline-block;
+    width : 50%;
+    padding : 10px;
+    box-sizing : border-box;
+    vertical-align : top;
+}
+main article h3{
+    text-align : center;
+    font-size : 1.8em;
+}
+main article img{
+    float : left;
+    clear : both;
+    margin-right : 10px;
+    border-radius : 90px;
+}
+main article a{
+    float : right;
+    clear : both ; 
+    padding : 8px 20px 8px;
+    text-decoration : none ;
+    color : white ;
+    background-color :#34b1b3 ;
+    border-radius : 3px ;
+}
+main article a:hover{
+    background-color :#4fd0d1 ;
+}
+aside{
+    
+    display : inline-block;
+    width : 29%;
+    background-color : #34b1b3;
+    border : 3px solid #29989a;
+    vertical-align : top;
+    padding : 15px;
+    box-sizing : border-box;
+    color : #bcdbd7;
+}
+
+aside article a{
+    color : #bcdbd7;
+    text-decoration : none;
+}
+aside article{
+    display : block;
+    
+}
+aside h2{
+    font-size : 1.4em;
+    
+}
+.base-vig{
+    position : relative;
+}
+.aside-vig{
+    
+    position : absolute;
+    top : -70px;
+    right : -80px;
+    
+}
+footer p{
+    font-size : 0.8em;
+    font-family : Cardo;
+    text-align : center;
+}
+footer img{
+    
+    max-width : 50px;
+    max-height : 50px;
+    min-width : 40px;
+    min-height : 40px;
+}
+.fa-tint{
+    color : #29989a;
+    margin-left : 10px;
+    margin-right : 10px;
+}
+.fa-plus-circle{
+    margin-left : 10px;
+}
+.fa-comment{
+    color :#bcdbd7;
+    margin-right : 5px;
+}
+
+.today-color{
+    color : #29989a;
+}

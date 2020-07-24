@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Totolist</title>
+</head>
+<body>
+    <h1>La todolist de fin 2019</h1>
+    
+    <?php if(!empty($tasks)): ?>
+        <form action="index.php" method="post">
+            <ul>
+                <!--Boucle-->
+                <?php foreach($tasks as $key => $task): ?>
+                    <li>
+                        <!-- Affichage de $key <//?php echo $key ?> -->
+                        <input type="checkbox" name="indexes[]" value="<?= $key ?>">
+                        <label for="">
+                            <?= $task[0] ?>
+                            <?php if(date_create($task[2]) < $today): ?>
+                                <strong>- en retard</strong>
+                            <?php endif; ?>
+                            
+                        </label>
+                        <p><?= $task[1] ?></p>
+                    </li>
+                <?php endforeach; ?>
+                <li><button type="submit">Remove</button></li>
+            </ul>
+        </form>
+    <?php endif; ?>
+    <hr>
+    <fieldset>
+        <legend></legend>
+        <form action="addList.php" method="post">
+            <input type="text" name="title" placeholder="Title" required/>
+            <textarea name="content" required>Content</textarea>
+            <input type="date" name="date" required/>
+            <input type="radio" name="criticity" value="1">
+            <input type="radio" name="criticity" value="2">
+            <input type="radio" name="criticity" value="3">
+            <button type="submit">Save</button>
+        </form>
+    </fieldset>
+</body>
+</html>

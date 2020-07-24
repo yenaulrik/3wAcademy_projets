@@ -1,0 +1,215 @@
+html{
+    font-size : 62.5%;
+}
+
+/*texte: 18px*/
+/*nav : 20px*/
+/*logo et h1 : 40px*/
+/*h2 : 35px*/
+/*h3 des compétences : 30px*/
+/*icone : 25px*/
+/*input et textarea : 16px*/
+
+
+
+body{
+    font-size : 1.8rem;
+    margin : 0 auto;
+    background-color : #fcfcfc;
+}
+
+nav ul{
+    display : flex;
+    flex-direction : row;
+    justify-content : space-around;
+    padding : 0;
+    align-items : center;
+}
+
+nav li{
+    list-style-type : none;
+}
+
+nav li a{
+    display : flex;
+    flex-direction : column;
+    text-align : center;
+    text-decoration : none;
+    color : black;
+    transition : all 300ms ease-in-out;
+    font-size : 2rem;
+}
+
+nav li a:hover{
+    transform : scale(1.2);
+}
+nav li img{
+    width : 150px;
+    
+}
+
+nav li img:hover{
+}
+
+nav i{
+    font-size : 3rem;
+    color : #f98d9c;
+}
+
+header section{
+    background-image : url('img/background.jpg');
+    background-repeat : no-repeat;
+    background-size : 100% 100%;
+    height : 500px;
+    width : 100%;
+    color : white;
+    text-align : center;
+    padding : 100px;
+    padding-top : 180px;
+    box-sizing : border-box;
+}
+header form{
+    text-align : center;
+    
+    width : 92%;
+    
+}
+header form input[type="text"]{
+    width : 100%;
+    height : 80px;
+    background-color : #f98d9c;
+    color : white;
+    padding-left : 8%;
+    font-size : 3.5rem;
+}
+header form input[type="submit"]{
+    width : 50%;
+    height : 40px;
+    background-color : #f98d9c;
+    color : white;
+    border-radius : 10px;
+    padding : 5px;
+    font-size : 2rem;
+}
+header form input[type="text"]:not(:focus) + input[type="submit"]{
+    display : none;
+}
+
+main{
+    max-width : 1100px;
+    margin : 0 auto;
+}
+
+main section{
+    text-align : center;
+    margin : 60px 0 60px;
+}
+
+.index h2{
+    display : block;
+    border : 2px dotted grey;
+    border-bottom : none;
+    padding : 40px;
+}
+
+.index div{
+    display : flex;
+    flex-direction : row;
+    justify-content : space-between;
+}
+.index div article{
+    margin : 20px;
+}
+
+.index div p{
+    text-align : left;
+}
+.index i{
+    font-size : 6rem;
+}
+
+.red{
+    color : #f98d9c ;
+    text-align : center !important;
+}
+
+.mutual{
+    display : flex;
+    flex-direction : row;
+    justify-content : space-between;
+}
+
+.dotted{
+    border : 2px dotted grey;
+    padding : 10px;
+    width : 28%;
+    text-align : center;
+    transition : all 300ms ease-in-out;
+}
+
+.dotted:hover{
+    transform : scale(1.1);
+    box-shadow : 7px 7px 7px grey;
+}
+
+.dotted div{
+    display : flex;
+    flex-direction : column;
+    padding : 20px;
+    text-align : center;
+    
+}
+.dotted h3{
+    color : white;
+    width : 100%;
+    background-color : #213e4e;
+    padding : 25px;
+    box-sizing : border-box;
+}
+
+.dotted li{
+    list-style: circle;
+    text-align : left;
+}
+.dotted a {
+    display : block;
+    background-color : #f98d9c;
+    color : white;
+    padding : 15px;
+    
+}
+article{
+    display : flex;
+    flex-direction : column;
+    justify-content : space-between;
+}
+.bouton{
+    align-self : flex-end
+}
+
+.dotted .text-in{
+    padding : 10px;
+}
+
+footer{
+    margin-top : 50px;
+    padding-top : 50px;
+    padding-bottom : 50px;
+    color : grey;
+    text-align : center;
+    background-color :#213e4e;
+    list-style-type : none;
+}
+
+footer a{
+    
+    text-decoration : none;
+    color : white !important;
+}
+footer img{
+    padding-top : 50px;
+    max-width : 50px;
+    max-height : 50px;
+    min-width : 40px;
+    min-height : 40px;
+}

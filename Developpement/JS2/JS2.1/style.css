@@ -1,0 +1,65 @@
+/*Le rectangle est bleu (royalblue), de taille 400x300 pixels et possède */
+/*des coins arrondis.*/
+/*Lorsqu'on applique la classe good en plus au rectangle, il devient vert */
+/*(limegreen).*/
+/*Lorsqu'on applique la classe important en plus au rectangle, il devient */
+/*rouge (firebrick).*/
+/*Le changement de couleur du rectangle doit s'animer.*/
+/*Ajouter le CSS nécessaire restant pour que le programme fonctionne.*/
+
+body{
+    margin : 0 auto;
+}
+header{
+    margin : 0 auto;
+    width : 60%;
+}
+#toggle-rectangle{
+    padding : 10px;
+    border : 2px solid grey;
+    border-radius : 3px;
+    display : inline-block;
+    background-color : ivory;
+}
+
+#toggle-rectangle:hover{
+    background-color : white;
+    cursor : pointer;
+}
+
+/* Elle sert à quoi celle-là ? */
+#toggle-rectangle:active{
+    background-color : grey;
+}
+
+
+.rectangle{
+    display : none;
+    background-color : royalblue;
+    background-image : url('9e75ccf7ce5683dc743c5b8c3a850fcf.png');
+    background-position : center;
+    background-size : 100% 100%;
+    height : 300px;
+    width : 400px;
+    transition : all 300ms ease-in-out;
+}
+.visible{
+    display : inline-block;
+}
+
+.good{
+    background-image : url('photofunky.gif');
+    background-position : center;
+    transform : rotate(360deg);
+    border-radius : 30%;
+    box-shadow : 10px 10px 10px grey;
+}
+
+.important{
+    background-image : url('giphy.gif');
+    background-position : center;
+    transform : rotate(360deg);
+    border-radius : 30%;
+    box-shadow : 10px 10px 10px grey;
+}
+

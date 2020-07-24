@@ -1,0 +1,112 @@
+@font-face{
+    font-family : 'fantasy';
+    src : url("font/Lobster_1.3.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Cardo';
+    src: url('font/cardo/cardo-regular.woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Cardo';
+    src: url('font/cardo/cardo-italic.woff');
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Cardo';
+    src: url('font/cardo/cardo-bold.woff');
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'love';
+    src: url('font/love beard.otf'),
+         url('font/love beard.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    font-family : Serif,Arial;
+    margin : auto;
+    width : 70%;
+    border : 2px black solid;
+    padding : 30px ;
+}
+h1, h2, h3{
+    font-family : 'love';
+}
+h1{
+    font-size : 3em;
+}
+h2{
+    font-size : 2.5em;
+    text-decoration : underline;
+}
+h3{
+    font-size : 2em;
+    text-decoration : underline;
+}
+h4{
+    font-size : 1.5em;
+    text-decoration : underline;
+}
+p{
+    font-family : 'Cardo' ;
+    font-size : 1.5em;
+}
+    
+.txt-arial{
+    font-family : Arial;
+}
+
+.txt-monospace {
+    font-family : Monospace ;
+}
+img{
+    min-width : 120px;
+    min-height : 120px;
+    max-width : 220px;
+    max-height : 150px;
+}
+flotant{
+    float : left;
+}
+
+.cadre{
+    border-top : 2px black solid;
+    border-bottom : 2px black solid;
+}
+
+.bg-red{
+    background-color : red;
+}
+.bg-blue{
+    background-color : blue;
+}
+.bg-green{
+    background-color : green;
+}
+.font-red{
+    color : red;
+}
+.font-blue{
+    color : blue;
+}
+.font-green{
+    color : green;
+}
+
+.centrer{
+    text-align : center;
+}
+
+.img-min{
+    max-width : 50px;
+    max-height : 50px;
+    min-width : 40px;
+    min-height : 40px;
+    }
+

@@ -1,0 +1,301 @@
+        /*-------------------------*/
+        /*---------POLICES---------*/
+        /*-------------------------*/
+@font-face {
+    font-family: 'bodega';
+    src: url('../fonts/BodegaSans_Black.ttf');
+
+}
+body{
+    
+    font-weight :normal;
+}
+html{
+    font-size : 62.5%;
+}
+nav{
+    font-family : 'bodega';
+    font-weight :normal;
+    font-size : 2.5rem;
+}
+h1{
+    font-family : 'bodega';
+    font-weight :normal;
+    font-size : 4rem;
+}
+h2{
+    font-family : 'bodega';
+    font-weight :normal;
+    font-size : 3rem;
+}
+h3{
+    font-family : 'bodega';
+    font-weight :normal;
+    font-size : 2.5rem;
+}
+/*nav : 2.5rem*/
+/*    - h1 : 4rem*/
+/*    - h2 : 3rem*/
+/*    - titres vignette : 2.5rem*/
+
+
+
+body{
+    background-color : #444444;
+    background-image : url("../img/bg_body.svg");
+    background-repeat : repeat;
+    color : white;
+    margin : 0 auto;
+    font-size : 2rem;
+}
+
+        /*-------------------------*/
+        /*---------HEADER ---------*/
+        /*-------------------------*/
+        
+header{
+background: linear-gradient(135deg, #FFFFFF 50%, #333333 50%);
+}
+header center{
+    width : 75%;
+    margin : 0 auto;
+    position : relative;
+    text-align : left;
+}
+center nav{
+    display : inline-block;
+    position : absolute;
+    right : 0;
+}
+center nav ul li{
+    list-style-type : none;
+    line-height : 2.2;
+    text-align : right;
+}
+center nav ul li a{
+    text-decoration : none;
+    color : white;
+    /*transition : text-shadow 300ms;*/
+}
+center nav ul li a:hover{
+    text-shadow : 3px 3px 3px #ff9d00;
+}
+
+center div{
+    display : inline-block;
+    padding : 30px 0px 30px;
+}
+h1,h2,h3{
+    text-transform : uppercase;
+}
+        /*-------------------------*/
+        /*--------  MAIN  ---------*/
+        /*-------------------------*/
+main{
+    width : 75%;
+    margin : 0 auto;
+    text-align : center;
+}
+
+/*.flexslider{*/
+/*    cursor : pointer;*/
+/*}*/
+
+.container{
+    width : 100%;
+    margin : 0;
+    padding : 0;
+    display : flex;
+    flex-direction : row;
+    justify-content : space-between;
+}
+
+.decouverte h2{
+    text-align : left;
+    box-shadow: -3px -3px 0px 0px rgba(0,0,0,0.1);
+    padding : 20px;
+    margin-bottom : 15px;
+}
+.container article{
+    width : 22%;
+    box-sizing : border-box;
+    background-color : white;
+    color : #00000078;
+    line-height : 1.6;
+    padding : 15px;
+}
+
+.container article img{
+    width : 100%;
+}
+.container article h3{
+    margin : 5px 0 5px ;
+    font-weight : normal;
+}
+        
+
+.container-bot{
+    display : flex;
+    flex-direction : row;
+    justify-content : space-between;
+}
+
+.bot-section{
+    width : 100%;
+    margin : 20px 0 20px;
+    padding : 0;
+    
+}
+.bot-section h2{
+    text-align : left;
+    box-shadow: -3px -3px 0px 0px rgba(0,0,0,0.1);
+    padding : 20px;
+    margin-bottom : 5px;
+}
+.container-bot article{
+    display : inline-block;
+    box-sizing : border-box;
+    width : 48.5%;
+    padding : 20px 0 20px 0px;
+    text-align : left;
+    vertical-align : top;
+    line-height : 1.6;
+}
+
+.container-bot video{
+    width : 100%;
+    cursor : pointer;
+}
+
+
+
+        /*-------------------------*/
+        /*-------- FOOTER ---------*/
+        /*-------------------------*/
+        
+footer{
+    color : #ffffff96;
+    margin-top : 30px;
+    padding-top : 30px;
+    box-shadow: 0px -6px 7px 0px rgba(0,0,0,0.1);
+    font-size : 0.8em;
+    text-align : center;
+}
+footer a{
+    color : white;
+    text-decoration : none;
+}
+footer img{
+    
+    max-width : 50px;
+    max-height : 50px;
+    min-width : 40px;
+    min-height : 40px;
+}
+footer section ul{
+    padding : 0;
+}
+footer section ul li{
+    list-style-type : none;
+    display : inline-block;
+    padding-right : 15px;
+    text-decoration : underline;
+}
+        /*-------------------------*/
+        /*-------- DIVERS ---------*/
+        /*-------------------------*/
+        
+.orange{
+    color : #ff9d00;
+}
+.btn-orange{
+    display : block;
+    background-color :#ff9d00 ;
+    text-decoration : none;
+    color : white;
+    padding : 12px 0 12px;
+    width : 100%;
+}
+.fab{
+    color : white;
+    margin-right : 50px;
+    margin-left : 50px;
+    
+}
+
+        /*-------------------------*/
+        /*-------- MEDIAS ---------*/
+        /*-------------------------*/
+
+@media screen and (max-width : 649px){
+    main{
+        width : 90%;
+    }
+    header{
+        width : 90%;
+        margin : auto;
+        margin-top : 10px;
+        box-shadow : 10px 10px 20px #0000004d;
+    }
+    header center{
+        width : 100%;
+        
+    }
+    center nav{
+        display : block;
+        position : relative;
+    }
+    center nav ul li{
+        padding : 30px;
+       
+    }
+    center div{
+        display : block;
+        text-align : center;
+    }
+    .container{
+        flex-wrap : wrap;
+    }
+    .container article{
+        width : 100%;
+        margin-top : 20px;
+    }
+    .container-bot{
+        flex-wrap : wrap;
+    }
+    .container-bot article{
+        width : 100%;
+        padding : 20px 0 20px 0px;
+        text-align : center;
+    }
+    footer{
+        margin : 12px;
+        padding : 10px;
+        box-shadow : 8px 8px 18px black;
+    }
+}
+    @media screen and (min-width : 650px)and (max-device-width : 1200px){
+    main{
+        width : 90%;
+    }
+    .container{
+        flex-wrap : wrap;
+    }
+    .container article{
+        width : 45%;
+        margin-top : 20px;
+    }
+    .container-bot{
+        flex-wrap : wrap;
+    }
+    .container-bot article{
+        width : 100%;
+        padding : 20px 0 20px 0px;
+        text-align : center;
+    }
+    footer{
+        margin : 12px;
+        padding : 10px;
+        box-shadow : 8px 8px 18px black;
+    }
+}

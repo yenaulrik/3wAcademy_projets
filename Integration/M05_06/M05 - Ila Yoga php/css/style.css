@@ -1,0 +1,243 @@
+body{
+    font-size : 1em;
+    font-family: 'Playfair Display', serif;
+    max-width : 100%;
+    margin : 0 auto;
+    line-height : 1.5em;
+}
+h1, nav, th, legend{
+    font-family: 'Kaushan Script', cursive;
+}
+header{
+    margin : 0 auto;
+    text-align : center;
+    color : white;
+    background-image : url('../img/fond.jpg');
+  
+    background-position: center;
+    background-repeat : no-repeat;
+    background-size : cover ;
+}
+nav{
+    font-size : 1.5em;
+   
+    padding-top : 1px;
+    padding-bottom : 1px;
+    
+}
+nav a{
+    text-decoration : none;
+    color : white;
+    text-shadow : 5px 5px 5px #3B3D4B;
+    display : inline-block;
+    padding : 5px;
+    margin : 10px 20px 10px;
+}
+nav a:hover{
+    background-color: rgba(0, 0, 255, 0.05);
+    border-radius : 50%;
+    transition: 1s;
+
+}
+nav a .fas, nav a .far{
+    display : block;
+}
+.promo{
+    text-shadow : 5px 5px 5px #3B3D4B;
+     background-color: rgba(0, 0, 255, 0.1);
+    padding-top : 1px;
+    padding-bottom : 1px;
+}
+.fond{
+    text-shadow : 5px 5px 5px #3B3D4B;
+    
+    height : 300px;
+    
+    padding-top : 90px;
+    padding-bottom : 30px;
+}
+header h1{
+    font-size : 2em;
+}
+main{
+    margin : 0 auto;
+}
+section{
+    margin : 0px;
+}
+.section1 article h2{
+    display : block;
+    width : 100%;
+    text-align : center;
+}
+.section1 article img{
+    display : inline-block;
+    width : 20%;
+    margin : 0px;
+    margin-top : 8px;
+    box-sizing : border-box;
+    vertical-align : top;
+}
+.section1 article{
+    margin-top : 15px;
+    margin-bottom : 35px;
+}
+.section2 article:hover{
+    background-color: rgba(0, 0, 255, 0.1);
+}
+.section1 article p{
+    display : inline-block;
+    width : 80%;
+    box-sizing : border-box;
+    margin : 0px;
+    padding : 8px;
+    vertical-align : top;
+}
+.section2{
+    display : block;
+    text-align : center;
+    background-image : url('../img/background_section.jpg');
+    background-size : 100% 100%;
+}
+.section2 article{
+    display : inline-block;
+    width : 30%;
+    margin: 0px;
+    padding : 20px;
+    text-align : center;
+    color : #f9e7fd;
+}
+.section2 article h2{
+    text-shadow : 5px 5px 5px #3B3D4B;
+}
+.section2 article img{
+    height : 180px;
+}
+hr{
+    color : #e7e7e7;
+    box-shadow : 2px 2px 2px #e7e7e7;
+	width : 80%;
+}
+iframe{
+    width : 100%;
+    margin : 0px;
+}
+footer{
+    padding-top : 20px;
+    display : block;
+    text-align : center;
+    background-image : url('../img/background_section.jpg');
+    background-size : 100% 100%;
+}
+footer p{
+    color : #f9e7fd;
+    font-size : 0.8em;
+    font-family : Cardo;
+    text-align : center;
+}
+footer a{
+    color : #f9e7fd;
+}
+footer img{
+    max-width : 50px;
+    max-height : 50px;
+    min-width : 40px;
+    min-height : 40px;
+}
+
+/*CONTACT.PHP*/
+.main-contact{
+    max-width : 80%;
+    text-align : center;
+}
+.section-contact{
+    margin-top : 65px;
+    margin-bottom : 20px;
+}
+table{
+    /*border : 1px solid #333333;*/
+    border-collapse : collapse;
+    
+    width : 100%;
+    margin-top:  25px;
+    margin-bottom : 10px;
+}
+tr>td{
+    text-align : left;
+}
+tr>td+td{
+    text-align : center;
+}
+tr:nth-child(2), tr:nth-child(4){ /*tr:nth-child(odd/even/2n+3)*/
+    background-color : #ece9e9;
+}
+th{
+    background-color : #c4a5de;
+    color : #ece9e9;
+    text-align : left;
+    font-size : 1.2em;
+    /*border : 1px solid #d0d0d0;*/
+    padding : 20px 20px 20px;
+    text-shadow: 5px 5px 5px #3B3D4B;
+    border-radius : 40px 0px 40px;
+    box-shadow : 2px 2px 6px grey;
+}
+td{
+    /*border : 1px solid #d0d0d0;*/
+    
+    padding : 5px;
+    
+}
+td a{
+    text-decoration : none;
+    color : #c4a5de;
+}
+fieldset {
+     padding: 0 20px 20px 20px;
+     padding : 25px;
+     margin : 35px 0 35px;
+     border : 1px solid #d0d0d0;
+     border-radius : 30px 0px 30px;
+     box-shadow : 2px 2px 6px grey;
+ }
+fieldset:hover{
+    background-color :rgba(0, 0, 255, 0.05);
+    transition: 1s;
+}
+legend {
+    font-size : 1.6em;
+}
+#coords, #nom, #mail{
+    border : none;
+    border-bottom : 1px solid #d0d0d0;
+}
+input[type='radio'],input[type='checkbox']{
+    background-color: #bbbbbb;
+}
+label{
+        margin-left : 140px;
+}
+select{
+    border : 1px solid #d0d0d0;
+    border-radius : 5px;
+    padding : 5px;
+    width : 80%;
+}
+input[type='submit']{
+    border : none;
+    border-right : 6px solid #dbc5e9;
+    border-bottom : 6px solid #dbc5e9;
+    border-radius : 5px;
+    padding : 10px 25px 10px;
+    color : white;
+    background-color : #8b5bc1b5;
+    box-shadow : 2px 2px 6px #8b5bc1b5;
+}
+input[type='submit']:hover{
+    background-color : #dbc5e9;
+    border : none;
+    border-right : 6px solid #7f649d;
+    border-bottom : 6px solid #7f649d;
+    box-shadow : 2px 2px 6px #7f649d;
+    
+}

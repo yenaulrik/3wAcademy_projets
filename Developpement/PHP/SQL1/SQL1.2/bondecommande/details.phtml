@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="display-4">Fou ta Cagoule !</h1>
+            <p class="lead">
+            </p>
+            <p class="lead">
+            <h2 style='text-align:right'>
+                <p><?= $result3['customerName'] ?></p>
+                <p><?= $result3['contactLastName'] . ' ' . $result3['contactFirstName'] ?></p>
+                <p><?= $result3['addressLine1'] ?></p>
+                <p><?= $result3['postalCode'] . ' ' . $result3['city'] ?></p>
+            </h2>
+            <a class="btn btn-primary btn-lg" href="index.php" role="button">Retour au menu</a>
+          </p>
+        </div>
+        
+        
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                    <th scope="col">Nom Article</th>
+                    <th scope="col">Prix Unitaire</th>
+                    <th scope="col">Quantité</th>
+                    <th scope="col">Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php foreach($result2 as $ligne):?>
+                        <tr>
+                        <th scope="row"><?= $ligne['productName'] ?></th>
+                        <td><?php echo $ligne['MSRP']; ?></td>
+                        <td><?php echo $ligne['quantityOrdered']; ?></td>
+                        <td style='text-align:right'><?php echo number_format(($ligne['quantityOrdered'] * $ligne['MSRP']), '2', '.', ' '); ?></td>
+                        </tr>
+                        
+                    <?php endforeach;?>
+                    
+                        <tr>
+                    	    <td colspan="3">Montant Total HT</td>
+                        	<td style='text-align:right'><?php echo number_format($total_HT, '2', '.', ' '); ?></td>
+                    	</tr>
+                    	<tr>
+                    	    <td colspan="3">TVA</td>
+                        	<td style='text-align:right'><?php echo number_format($TVA, '2', '.', ' '); ?></td>
+                    	</tr>
+                    	<tr>
+                    	    <td colspan="3">Montant Total TTC</td>
+                        	<td style='text-align:right'><?php echo number_format($total_TTC, '2', '.', ' '); ?></td>
+                    	</tr>
+                </tbody>
+            </table>
+        
+        
+
+    </div>
+</body>
+</html>

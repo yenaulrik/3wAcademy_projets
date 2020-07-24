@@ -1,0 +1,35 @@
+
+<div class="container">
+    <h2><i class="fas fa-cogs"></i>  Panneau d'Edition</h2>
+    
+    <form action="edit_post.php">
+        <?php if($_SESSION['admin'] == '1'): ?>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <label class="input-group-text" for="author">Auteur</label>
+                </div>
+                    <select class="custom-select" name="author" id="author">
+                        <?php foreach($result_author as $author){
+                            if($result['author_id'] == $author['id']){
+                                echo '<option value="' . $author['id'] . '" selected>' . $author['first_name'] . ' ' . $author['last_name'] . '</option>';
+                            }else{
+                                echo '<option value="' . $author['id'] . '">' . $author['first_name'] . ' '  . $author['last_name'] . '</option>';
+                            }
+                        }
+                    ?>
+                    </select>
+            </div>
+        <?php endif?> 
+
+        <div class="form-group">
+            <label for="title">Titre du post</label>
+            <input class="form-control form-control-lg" type="text" id="title" value="<?= $result['title']; ?>" maxlength="100" name="title" placeholder=""required>
+            <label for="content">Contenu du post</label>
+            <textarea class="form-control" id="content" name="content" rows="3" maxlength="10000" required><?= $result['post_content']; ?></textarea>
+            <input type="submit" class="btn btn-primary btn-lg" value="Enregistrer">
+            <input type="hidden" name="id" value="<?=$id_post?>">
+            <a href="edit_post.php?delete=<?=$id_post?>"><button type="button" class="btn btn-danger btn-lg">Supprimer</button></a>
+            <a href="admin.php"><button type="button" class="btn btn-secondary btn-lg">Annuler</button></a>
+        </div>
+    </form>
+</div>

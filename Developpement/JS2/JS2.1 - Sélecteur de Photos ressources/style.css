@@ -1,0 +1,39 @@
+body{
+    margin : 0 auto;
+    background-color : white;
+}
+
+main{
+    margin : 0 auto;
+    width : 70%;
+    max-width : 1100px;
+    display : flex;
+    flex-direction : column;
+}
+
+#photo-list{
+    display : flex;
+    flex-direction : row;
+    justify-content : space-between;
+    flex-wrap : wrap;
+    text-align : left;
+}
+
+#photo-list img{
+  padding : 0.5em;
+  margin : 1em;
+  width : 25%;
+  border-radius : 5px;
+  box-sizing : border-box;
+  transition : transform 300ms;
+}
+
+.gris{
+    background-color : silver;
+    
+}
+
+.selected{
+    background-color : forestgreen;
+    transform : scale(1.1);
+}

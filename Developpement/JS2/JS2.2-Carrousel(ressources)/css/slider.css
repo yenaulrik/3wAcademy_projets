@@ -1,0 +1,50 @@
+#toolbar-toggle{
+    text-decoration : none;
+    color : grey;
+    background-color : #a2e8ca;
+    padding : 15px;
+    border-radius : 8px;
+    font-weight : bold;
+    box-shadow : 3px 3px 3px #719988;
+}
+#toolbar-toggle:active{
+    box-shadow : 1px 1px 1px #719988;
+}
+
+.slider{
+    display : none ;
+}
+.toolbar ul li{
+    list-style-type : none;
+    display : inline-block;
+    padding : 10px;
+}
+.toolbar i{
+    font-size : 2rem;
+    border : 1px solid grey;
+    border-radius: 3px;
+    padding : 5px;
+    color : grey;
+    box-shadow: 3px 3px 3px grey;
+}
+.toolbar i:hover{
+    cursor : pointer;
+}
+.toolbar i:active{
+    box-shadow: 1px 1px 1px grey;
+}
+
+.display_none{
+    display : none;
+}
+
+.display_block{
+    display : block ;
+}
+
+.display_inline_block{
+    display : inline-block ;
+}
+.star_active{
+   color : yellow;
+}

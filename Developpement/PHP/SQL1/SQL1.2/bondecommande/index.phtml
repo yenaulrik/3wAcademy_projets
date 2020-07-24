@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="display-4">Fou ta Cagoule !</h1>
+            <p class="lead">
+            </p>
+        </div>
+        
+        <?php if(!empty($result1) && empty($details) ): ?>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                    <th scope="col">Commande</th>
+                    <th scope="col">Date de la Commande</th>
+                    <th scope="col">Date de lisvraison</th>
+                    <th scope="col">Statut</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php foreach($result1 as $ligne):?>
+                        <tr>
+                        <th scope="row">
+                            
+                            <a href="index.php?number=<?= $ligne['orderNumber']?>&cstNbr=<?= $ligne['customerNumber']?>"> <?= $ligne['orderNumber'] ?></a></th>
+                        <td><?= $ligne['orderDate'] ?></td>
+                        <td><?= $ligne['shippedDate'] ?></td>
+                        <td><?= $ligne['status'] ?></td>
+                        </tr>
+                    <?php endforeach;?>
+                </tbody>
+            </table>
+        <?php endif; ?>
+        
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,93 @@
+            /*-- FONTS --*/
+@font-face {
+    font-family: 'Oswald';
+    src: url('../fonts/Oswald-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+            /*-- CORPS --*/
+body{
+    background-image : url("../img/fond.png");
+    
+    margin : 0 auto;
+    color : #646464;
+    font-size : 1.3em;
+}
+
+            /*-- HEADER --*/
+header{
+    background-color :#b8cb21;
+    max-width : 750px;
+    padding : 30px;
+    margin : 0 auto;
+}
+.nav-green{
+    color : #384725;
+    font-family : 'Oswald';
+   
+    margin-left : 30px;
+    text-transform : uppercase;
+}
+
+            /*-- MAIN --*/
+main{
+    padding : 30px;
+    background-color : white;
+    max-width : 750px;
+    margin : 0 auto;
+}
+
+h1, h2{
+    font-family : 'Oswald';
+    font-size : 1.5em;
+    color :#b8cb21;
+    text-transform : uppercase;
+}
+
+            /*-- FOOTER --*/
+footer p{
+    font-size : 0.8em;
+    font-family : Cardo;
+    text-align : center;
+}
+footer img{
+    
+    max-width : 50px;
+    max-height : 50px;
+    min-width : 40px;
+    min-height : 40px;
+}
+
+            /*-- SPECIALS --*/
+.flotant-left{ /*Placement et style des images*/
+    float : left;
+    clear : both;
+    margin-right : 10px;
+    max-width : 250px;
+}
+
+.flotant-right{ /*Placement des raccourcis NAV*/
+    float : right;
+    padding : 50px;
+}
+
+.cadre{ /*Cadre pour entourer les boutons*/
+    height : 50px;
+}
+
+.bouton{ /*bouton vert des articles*/
+    float : right;
+    clear : both ; 
+    padding : 8px 20px 8px;
+    text-decoration : none ;
+    color : white ;
+    background-color :#b8cb21 ;
+    border-radius : 3px ;
+}
+.shad{
+    
+    max-width : 750px;
+    margin : 0 auto;
+    box-shadow : 6px 6px 20px #646464;
+}

@@ -1,0 +1,162 @@
+html{	
+    font-size : 62.5%;
+}
+body{
+    font-size : 1.6rem;
+    font-family: 'Open Sans', sans-serif;
+    background-color : #f2f1f4;
+    margin : 0 auto;
+    width : 80%;
+    line-height : 1.6;
+}
+
+header{
+    text-align : center;
+}
+
+hr{
+    color : #30a894;
+}
+h1, h2, h3, a{
+    color : #30a894;
+    font-family: 'PT Sans Narrow', sans-serif;
+    margin : 0;
+    margin-top : 15px;
+    text-transform : uppercase;
+    font-weight : bold;
+}
+
+h1{
+    font-size : 4rem;
+}
+
+h2{
+    font-size : 2.4rem;
+}
+
+nav{
+    background-color : #30a894;
+    border-radius : 3px;
+}
+nav > ul{
+    margin : 0;
+    padding : 0;
+}
+.menu{
+    list-style-type : none;
+    display : inline-block;
+    text-decoration : none;
+    padding : 20px;
+    width : 33.3%;
+    box-sizing : border-box;
+    color : #EBEBEB;
+    border-radius : 3px;
+    background-color : #30a894;
+    transition: background-color 0.3s ease-in-out;
+}
+.menu a{
+    text-decoration : none;
+    color : #EBEBEB;
+}
+
+.menu:hover{
+    background-color : #3bcab2;
+    text-shadow : 3px 3px 4px grey;
+}
+.img-h1{
+    display : block;
+    height : 500px;
+    width : 100%;
+    background-size: contain;
+    background-repeat: no-repeat;    
+    background-image : url("img/illu.jpg");
+    
+}
+
+main{
+    vertical-align : top;
+    display : inline-block;
+    width : 70%;
+    box-sizing : border-box;
+    
+    padding : 0 20px 0;
+}
+aside{
+    background-color : #b8dcb1;
+    vertical-align : top;
+    display : inline-block;
+    width : 30%;
+    box-sizing : border-box;
+    padding : 20px;
+}
+
+footer p{
+    font-size : 0.8em;
+    font-family : Cardo;
+    text-align : center;
+}
+footer img{
+    
+    max-width : 50px;
+    max-height : 50px;
+    min-width : 40px;
+    min-height : 40px;
+}
+
+@media screen and (max-width : 649px){
+    body{
+        width : 100%;
+    }
+    nav{
+    margin-left : 10px;
+    margin-right : 10px;
+    
+    }
+    
+    .menu{
+        display : block;
+        width : 100%;
+    }
+    main{
+        display : block;
+        width : 100%;
+    }
+    aside{
+        display : none;
+    }
+    .img-h1{
+        height : 200px;
+        <script>
+            document.getElementsByClassName
+        </script>
+        background-image : url("img/illu-mobile.jpg");
+    }
+}
+
+@media screen and (min-width : 650px)and (max-device-width : 1200px){
+    body{
+        width : 100%;
+    }
+    nav{
+    margin-left : 10px;
+    margin-right : 10px;
+    
+    }
+    
+    nav > ul > li{
+        display : block;
+        width : 100%;
+    }
+    main{
+        display : block;
+        width : 100%;
+    }
+    aside{
+        display : block;
+        width : 100%;
+    }
+    .img-h1{
+        height : 400px;
+        background-image : url("img/illu-tablette.jpg");
+    }
+}

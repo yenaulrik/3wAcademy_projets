@@ -1,0 +1,24 @@
+body{
+    margin : 0 auto;
+    margin-top : 30px;
+}
+
+p i{
+    font-size : 25px;
+    padding : 10px;
+    margin : 20px;
+    border : 1px solid grey;
+    border-radius: 4px;
+    background-color: white;
+    box-shadow: 3px 3px 3px grey;
+}
+i:active{
+    box-shadow: 1px 1px 1px grey;
+}
+
+.hidden{
+    display : none;
+}
+.blue{
+    color : blue;
+}

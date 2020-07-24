@@ -1,0 +1,42 @@
+
+<div class="container">
+    <div class="jumbotron">
+        <form action="create_user.php">
+            <h1 class="display-4">Inscription!</h1>
+            <hr class="my-4">
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">Nom d'utilisateur(connection)</span>
+                </div>
+                <input type="text" name="user" class="form-control" placeholder="pseudo" aria-label="Username" minlength="5"aria-describedby="basic-addon1"required>
+            </div>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">Em@il</span>
+                </div>
+                <input type="text" name="email" class="form-control" placeholder="3w@academy.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" aria-label="Username" aria-describedby="basic-addon1"required>
+            </div>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">Mot de passe</span>
+                </div>
+                <input type="password" name="password" class="form-control"  aria-label="Username" minlength="5" aria-describedby="basic-addon1" required>
+            </div>
+
+            <h2>voudrez vous poster sur le blog ?</h2>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">
+                        <input name="check" type="checkbox" aria-label="Checkbox for following text input">
+                    </div>
+                </div>
+                <input name="first_name" type="text" class="form-control" placeholder="Prénom">
+                <input name="last_name" type="text" class="form-control" placeholder="Nom">
+            </div>
+
+            <input type="submit" class="btn btn-primary btn-lg btn-block active" role="button" aria-pressed="true" value="Envoyer Inscription">
+            <a href="index.php" class="btn btn-secondary btn-lg btn-block active" role="button" aria-pressed="true" >Annuler</a>
+        </form>
+    </div>
+</div>
